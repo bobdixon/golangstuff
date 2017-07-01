@@ -1,3 +1,3 @@
-package golangstuff
+package main
 
 
