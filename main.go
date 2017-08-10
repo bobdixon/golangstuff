@@ -1,9 +1,16 @@
 package main
 
 import "fmt"
+import "os"
 
 func main() {
-	for i := 0; i<=100; i++ {
-		fmt.Println(i)
+
+	var s string
+	var sep string
+	for i := 1; i < len(os.Args); i++ {
+
+		s += sep + os.Args[i]
+		sep = " "
 	}
+	fmt.Println(s)
 }
